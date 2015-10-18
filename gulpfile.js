@@ -25,6 +25,10 @@ gulp.task('watch', function () {
     gulp.watch(['src/**/*'], ['reload']);
 });
 
+gulp.task('dist', function(){
+    gulp.src('src/**/*')
+        .pipe(gulp.dest('dist'));
+});
 
 gulp.task('deploy', function () {
     return gulp.src('./dist/**/*')
