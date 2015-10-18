@@ -21,6 +21,12 @@
     -webkit-animation: pulsate 1.3s ease-out;
     -webkit-animation-delay: 0.35s;
     -webkit-animation-iteration-count: infinite;
+    -ms-animation: pulsate 1.3s ease-out;
+    -ms-animation-delay: 0.35s;
+    -ms-animation-iteration-count: infinite;
+    -mos-animation: pulsate 1.3s ease-out;
+    -mos-animation-delay: 0.35s;
+    -mos-animation-iteration-count: infinite;
 }
 
 .hover-darken::before {
