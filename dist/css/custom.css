@@ -43,6 +43,10 @@
 @-webkit-keyframes pulsate {
     0% {-webkit-transform: scale(1.0); opacity: 1.0;}
     100% {-webkit-transform: scale(1.05); opacity: 0.0;}
+    0% {-moz-transform: scale(1.0); opacity: 1.0;}
+    100% {-moz-transform: scale(1.05); opacity: 0.0;}
+    0% {-ms-transform: scale(1.0); opacity: 1.0;}
+    100% {-ms-transform: scale(1.05); opacity: 0.0;}
 }
 
 .visible {
