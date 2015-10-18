@@ -17,6 +17,7 @@
     "gulp-changed": "^1.3.0",
     "gulp-gh-pages": "^0.5.3",
     "gulp-livereload": "^3.8.1",
-    "gulp-serve": "^1.2.0"
+    "gulp-serve": "^1.2.0",
+    "gulp-watch": "^4.3.5"
   }
 }
