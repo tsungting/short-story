@@ -20,7 +20,7 @@ gulp.task('reload', function () {
         .pipe(livereload());
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['dist'], function () {
     livereload.listen();
     gulp.watch(['src/**/*'], ['reload']);
 });
