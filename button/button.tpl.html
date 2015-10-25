@@ -1,6 +1,6 @@
-<div class="h2 muted mb3 px1 btn regular hover-darken flex">
+<div class="h2 mb3 px1 btn regular hover-darken flex" ng-click="buttonCtrl.clicked()">
     <div class="">{{buttonCtrl.getNormalText()}}</div>
     <div class="grey-blue px1">{{buttonCtrl.getHighlightText()}}</div>
     <div class="flex flex-auto"></div>
-    <div> <i class="fa fa-angle-double-right h2"></i> </div>
+    <div class="arrow" ng-class="buttonCtrl.getArrowClass()"> <i class="fa fa-angle-double-right fa-fw h2"></i> </div>
 </div>

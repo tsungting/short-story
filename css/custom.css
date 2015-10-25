@@ -1,11 +1,11 @@
 
 .hover-darken {
-    opacity: 0.5;
     transform: scale(1.0);
     transition-duration: 0.3s;
     transition-property: opacity, transform;
     transition-timing-function: ease-out;
 }
+
 .hover-darken:hover,
 .hover-darken:focus,
 .hover-darken:active {
@@ -14,11 +14,11 @@
 
 }
 
-.hover-darken:hover::before{
+.hover-darken:hover::before {
     opacity: 0.8;
     border-radius: 5px;
     transform: scale(1.0);
-    -webkit-animation: pulsate 1.3s ease-out;
+    -webkit-animation: pulsate 2s ease-out;
     -webkit-animation-delay: 0.35s;
     -webkit-animation-iteration-count: infinite;
 }
@@ -36,13 +36,19 @@
     content: '';
 }
 
-.grey-blue{
+.grey-blue {
     color: #17456D;
 }
 
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(1.0); opacity: 1.0;}
-    100% {-webkit-transform: scale(1.05); opacity: 0.0;}
+    0% {
+        -webkit-transform: scale(1.0);
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        opacity: 0.0;
+    }
 }
 
 .visible {
@@ -51,8 +57,32 @@
     transition: opacity 0.35s, transform 0.35s;
 }
 
+.faded {
+    opacity: 0.6;
+    transform: scale(1);
+    transition: opacity 0.35s, transform 0.35s;
+}
+
 .hidden {
     opacity: 0.4;
     transform: scale(0.9);
     transition: opacity 0.35s, transform 0.35s;
-} 
+}
+
+.activate {
+    -webkit-animation: icon-crash 0.75s ease-out;
+}
+
+@-webkit-keyframes icon-crash {
+
+    0% {
+        -webkit-transform: scale(1.0);
+    }
+    90% {
+        -webkit-transform: scale(1.75);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+    }
+
+}

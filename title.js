@@ -18,8 +18,11 @@ angular.module('magazine.title.controller', [])
         }
 
         vm.getVisibility = function(elementName){
-            if (focusElement === elementName || focusElement === ''){
+            if (focusElement === elementName){
                 return 'visible';
+            }
+            if (focusElement === ''){
+                return 'faded';
             }
             return 'hidden';
         }
